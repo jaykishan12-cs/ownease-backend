@@ -1,0 +1,9 @@
+# Normalize all text files to use LF in the repo
+* text=auto
+
+# Force shell scripts and YAML files to use LF endings
+*.sh text eol=lf
+*.yml text eol=lf
+
+# Batch files should use CRLF on checkout
+*.bat text eol=crlf
