@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const port = 8080 || 3000 ;
 const cors = require("cors");
-const morgan = require("morgan");
+
 
 const Customer = require("./models/Customer");
 const User = require("./models/user"); 
@@ -19,11 +19,10 @@ const connectDB = require("./config/db");
 
 app.use(express.json());         
 app.use(cors({
-  origin: "http://localhost:5173"
+  origin: "http://ownease.onrender.com/"
 }));
 
 //logging every request
-app.use(morgan("dev"));
 
 
 //mongo connect fucntion in config/db
