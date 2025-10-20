@@ -19,7 +19,7 @@ const connectDB = require("./config/db");
 
 app.use(express.json());         
 app.use(cors({
-  origin: "https://ownease-rc91u5uou-jaykishan12-cs-projects.vercel.app"
+  origin: "https://ownease.vercel.app/"
 }));
 
 //logging every request
