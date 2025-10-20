@@ -18,9 +18,7 @@ const authRoutes = require("./routes/auth");
 const connectDB = require("./config/db");
 
 app.use(express.json());         
-app.use(cors({
-  origin: "https://ownease.vercel.app/"
-}));
+app.use(cors());
 
 //logging every request
 
